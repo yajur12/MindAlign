@@ -1,8 +1,8 @@
-import expreess from 'express'
+import express from 'express'
 import { therapistList , loginTherapist, appointmentsTherapist, appointmentCancel, appointmentComplete, therapistDashboard, therapistProfile, updateTherapistProfile } from '../controllers/therapistController.js'
 import authTherapist from '../middleware/authTherapist.js'
 
-const therapistRouter = expreess.Router()
+const therapistRouter = express.Router()
 
 
 therapistRouter.get('/list', therapistList)
